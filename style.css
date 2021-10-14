@@ -52,13 +52,19 @@ nav img {
 }
 
 .content > div:first-child span {
-  color: #ffa500;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .content > div:last-child span {
-  color: #800080;
+  background: linear-gradient(to right, #ffa970 0%, #cf23cf 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 #blue {
-  color: #0000ff;
+  background: linear-gradient(to right, #524ffa 0%, #cf23cf 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
