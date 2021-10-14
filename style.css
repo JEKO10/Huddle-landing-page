@@ -29,22 +29,54 @@ nav img {
 
 .content > div {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px 20px;
 }
 
 .content > div > div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.content > div > div > * {
+  padding: 0 50px;
 }
 
 .content > div > div:first-of-type {
+  flex-direction: column;
+}
+
+.content > div > div ul {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 1.5rem;
+}
+
+.content > div > div ul li {
+  padding: 0 3px;
+  color: #808080;
+}
+
+.content > div:first-of-type ul li:nth-child(1),
+.content > div:first-of-type ul li:nth-child(2),
+.content > div:first-of-type ul li:nth-child(3) {
+  color: red;
+}
+
+.content > div:nth-child(2) ul li:nth-child(1),
+.content > div:nth-child(2) ul li:nth-child(2),
+.content > div:nth-child(2) ul li:nth-child(3),
+.content > div:nth-child(2) ul li:nth-child(4) {
+  color: red;
+}
+
+.content > div:last-of-type ul li:nth-child(1),
+.content > div:last-of-type ul li:nth-child(2) {
+  color: red;
 }
 
 .content span {
@@ -57,14 +89,19 @@ nav img {
   -webkit-text-fill-color: transparent;
 }
 
+.content > div:nth-child(2) span {
+  background: linear-gradient(to right, #524ffa 0%, #cf23cf 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 .content > div:last-child span {
   background: linear-gradient(to right, #ffa970 0%, #cf23cf 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
-#blue {
-  background: linear-gradient(to right, #524ffa 0%, #cf23cf 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+.content h1 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
 }
