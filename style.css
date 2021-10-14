@@ -12,3 +12,53 @@ body {
 nav img {
   padding: 40px 80px;
 }
+
+.main {
+  background-color: #fff;
+  max-width: 900px;
+  border-radius: 20px;
+  margin-left: 5rem;
+}
+
+.main nav {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 20px 20px 0 0;
+}
+
+.content > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.content > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content > div > div:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.content span {
+  font-size: 7rem;
+}
+
+.content > div:first-child span {
+  color: #ffa500;
+}
+
+.content > div:last-child span {
+  color: #800080;
+}
+
+#blue {
+  color: #0000ff;
+}
