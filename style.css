@@ -5,6 +5,10 @@
 }
 
 body {
-  background: #674baf url("./img/bg-desktop.svg");
+  background: #674baf url("./img/bg-desktop.svg") no-repeat;
   background-size: 170vh;
+}
+
+nav img {
+  padding: 40px 80px;
 }
