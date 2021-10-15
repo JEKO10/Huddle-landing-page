@@ -162,6 +162,8 @@ nav ul li a {
   font-size: 1.5rem;
   padding: 20px 40px;
   border-radius: 40px;
+  border: none;
+  box-shadow: 2px 2px 20px 1px #000;
 }
 
 @media screen and (max-width: 992px) {
@@ -212,5 +214,19 @@ nav ul li a {
 
   .content h1 {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    flex-wrap: wrap;
+  }
+
+  .content > div > div:last-of-type {
+    display: inline-flex;
+  }
+
+  .text {
+    margin-bottom: 2rem;
   }
 }
