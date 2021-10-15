@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #674baf url("./img/bg-desktop.svg") no-repeat;
+  background: #674baf url("./img/bg-desktop.svg");
   background-size: 170vh;
 }
 
@@ -36,10 +36,16 @@ nav ul li {
   border: 2px solid #fff;
 }
 
+nav ul li a {
+  color: #fff;
+}
+
 .main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 0 20px;
+  margin-bottom: 2rem;
 }
 
 .tab {
@@ -68,8 +74,8 @@ nav ul li {
   align-items: flex-start;
 }
 
-.content > div > div > * {
-  padding: 0 50px;
+.content > div > div > *:not(ul) {
+  padding: 0 30px;
 }
 
 .content > div > div:first-of-type {
@@ -136,6 +142,7 @@ nav ul li {
 
 .text {
   color: #fff;
+  padding: 0 20px;
 }
 
 .text h1 {
@@ -155,4 +162,46 @@ nav ul li {
   font-size: 1.5rem;
   padding: 20px 40px;
   border-radius: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .content span {
+    font-size: 3.5rem;
+  }
+
+  .content h1 {
+    font-size: 1.2rem;
+  }
+
+  .content > div ul li {
+    font-size: 0.8rem;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .text button {
+    background: #fff;
+    font-size: 1rem;
+  }
+
+  /* .text p {
+    max-width: 500px;
+    font-size: 1.2rem;
+    padding-bottom: 4rem;
+  }
+
+  .text button {
+    background: #fff;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    border-radius: 40px;
+  } */
 }
