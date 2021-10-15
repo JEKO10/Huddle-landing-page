@@ -65,7 +65,7 @@ nav ul li a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px 20px;
+  padding: 20px;
 }
 
 .content > div > div {
@@ -74,7 +74,7 @@ nav ul li a {
   align-items: flex-start;
 }
 
-.content > div > div > *:not(ul) {
+.content > div > div:first-of-type {
   padding: 0 30px;
 }
 
@@ -191,17 +191,26 @@ nav ul li a {
     background: #fff;
     font-size: 1rem;
   }
+}
 
-  /* .text p {
-    max-width: 500px;
-    font-size: 1.2rem;
-    padding-bottom: 4rem;
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 40px 20px;
   }
 
-  .text button {
-    background: #fff;
-    font-size: 1.5rem;
-    padding: 20px 40px;
-    border-radius: 40px;
-  } */
+  .content span {
+    font-size: 4rem;
+  }
+
+  .content > div > div:last-of-type {
+    display: none;
+  }
+
+  .content > div > div:first-of-type {
+    padding-right: 0;
+  }
+
+  .content h1 {
+    font-size: 1rem;
+  }
 }
