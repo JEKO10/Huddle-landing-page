@@ -103,13 +103,14 @@ nav ul li a {
 
 .content > div:nth-child(2) ul li:nth-child(1),
 .content > div:nth-child(2) ul li:nth-child(2),
-.content > div:nth-child(2) ul li:nth-child(3),
-.content > div:nth-child(2) ul li:nth-child(4) {
+.content > div:nth-child(2) ul li:nth-child(3) {
   color: red;
 }
 
 .content > div:last-of-type ul li:nth-child(1),
-.content > div:last-of-type ul li:nth-child(2) {
+.content > div:last-of-type ul li:nth-child(2),
+.content > div:last-of-type ul li:nth-child(3),
+.content > div:last-of-type ul li:nth-child(4) {
   color: red;
 }
 
